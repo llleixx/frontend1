@@ -8,21 +8,31 @@ $soft-mageta: hsl(300, 69%, 71%);
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
 
 body {
   background: url("../images/bg-desktop.svg") $violet top left / cover no-repeat;
-  margin: 30px 50px;
+  padding: 30px 50px;
   color: white;
   font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-container {
   margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
+}
 
-  .logo-img {
-    height: 28px;
-  }
+header,
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 .main-container {
